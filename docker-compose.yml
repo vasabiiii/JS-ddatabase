@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  inst_db:
+    container_name: inst_db
+    ports:
+      - 5432:5432
+    environment:
+      - POSTGRES_PASSWORD=root
+      - POSTGRES_USER=admin
+    image: postgres:15.3-alpine
